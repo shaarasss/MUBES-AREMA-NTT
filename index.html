@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan MUBES AREMA NTT</title>
+  <!-- Google Fonts: Nuansa Elegan & Klasik -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --blue-primary: #001f54;
+      --blue-accent: #034078;
+      --gold: #d4af37;
+      --gold-light: #f3e5ab;
+      --text-light: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      text-align: center;
+      line-height: 1.6;
+      background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: rgba(15, 23, 42, 0.85);
+      border-left: 2px solid var(--gold);
+      border-right: 2px solid var(--gold);
+      min-height: 100vh;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+      position: relative;
+      padding-bottom: 40px;
+    }
+
+    /* Header & Cover */
+    header {
+      padding: 40px 20px 20px;
+      border-bottom: 1px dashed var(--gold);
+      background: linear-gradient(180deg, rgba(0, 31, 84, 0.6) 0%, rgba(15, 23, 42, 0) 100%);
+    }
+
+    .ornament {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    /* Logo Single Container */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .logo-img {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.5));
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 5px;
+      border: 2px solid var(--gold);
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      font-size: 1.8rem;
+      margin: 15px 0 5px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--blue-accent);
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-top: 10px;
+      border: 1px solid var(--gold);
+    }
+
+    /* Content Sections */
+    .section {
+      padding: 25px 20px;
+    }
+
+    .card {
+      background: rgba(2, 62, 125, 0.2);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-family: 'Cinzel', serif;
+      color: var(--gold-light);
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .event-details {
+      list-style: none;
+      text-align: left;
+    }
+
+    .event-details li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .event-details i {
+      color: var(--gold);
+      font-size: 1.1rem;
+      width: 20px;
+      text-align: center;
+    }
+
+    /* Button CTA */
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, var(--gold) 0%, #b8860b 100%);
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Tombol Musik Melayang */
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background: var(--gold);
+      border: 2px solid var(--gold-light);
+      padding: 12px 15px;
+      border-radius: 50px;
+      color: #0f172a;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      padding-top: 20px;
+      border-top: 1px solid rgba(212, 175, 55, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Audio YouTube Tersembunyi -->
+  <div style="display:none;">
+    <div id="yt-player"></div>
+  </div>
+
+  <!-- Tombol Musik Melayang -->
+  <button onclick="toggleMusic()" class="music-control" id="music-btn">
+    <i class="fa-solid fa-music" id="music-icon"></i>
+    <span id="music-text">Musik On</span>
+  </button>
+
+  <div class="container">
+    <header>
+      <div class="ornament">ꦱꦭꦩ꧀ꦱꦠꦸꦗꦶꦮ</div>
+      
+      <!-- LOGO TUNGGAL -->
+      <div class="logo-container">
+        <img src="IMG-20261006-WA0005.jpg" alt="Logo Arema NTT" class="logo-img">
+      </div>
+
+      <p class="subtitle">Undangan Resmi</p>
+      <h1>MUBES AREMA NTT</h1>
+      <p class="subtitle">IKATAN AREMA ONGIS NADE NTT</p>
+      <span class="badge">Salam Satu Jiwa</span>
+    </header>
+
+    <div class="section">
+      <div class="card">
+        <p style="margin-bottom: 15px; font-size: 0.9rem;">
+          Mengundang seluruh Kerabat & Keluarga Besar Ikatan Arema Ongis Nade NTT untuk hadir dalam acara Musyawarah Besar (MUBES) AREMA NTT.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Waktu & Tempat</h2>
+        <ul class="event-details">
+          <li>
+            <i class="fa-regular fa-calendar-check"></i>
+            <span><strong>Hari/Tgl:</strong> Sabtu, 24 Oktober 2026</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-clock"></i>
+            <span><strong>Waktu:</strong> 13.00 WITA - Selesai</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span><strong>Lokasi:</strong> Aula Sekretariat AREMA NTT, Kupang</span>
+          </li>
+        </ul>
+        <a href="https://maps.google.com" target="_blank" class="btn">
+          <i class="fa-solid fa-map-location-dot"></i> Petunjuk Lokasi
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Konfirmasi Kehadiran</h2>
+        <p style="font-size: 0.85rem; margin-bottom: 15px;">Mohon konfirmasi kehadiran Anda untuk kelancaran acara.</p>
+        <a href="https://wa.me/6285815741371?text=Halo,%20saya%20akan%20hadir%20di%20MUBES%20AREMA%20NTT" target="_blank" class="btn">
+          <i class="fa-brands fa-whatsapp"></i> Konfirmasi via WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Ikatan Arema Ongis Nade NTT</p>
+      <p style="font-size: 0.75rem; margin-top: 5px; color: var(--gold-light);">Sasaji - Salam Satu Jiwa</p>
+    </footer>
+  </div>
+
+  <!-- Script YouTube API -->
+  <script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    var isPlaying = false;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('yt-player', {
+        height: '0',
+        width: '0',
+        videoId: 'GY5oPYd-pU4',
+        playerVars: {
+          'autoplay': 1,
+          'loop': 1,
+          'playlist': 'GY5oPYd-pU4'
+        },
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.playVideo();
+      isPlaying = true;
+    }
+
+    function toggleMusic() {
+      var icon = document.getElementById('music-icon');
+      var text = document.getElementById('music-text');
+      
+      if (isPlaying) {
+        player.pauseVideo();
+        isPlaying = false;
+        icon.className = 'fa-solid fa-volume-xmark';
+        text.innerText = 'Musik Off';
+      } else {
+        player.playVideo();
+        isPlaying = true;
+        icon.className = 'fa-solid fa-music';
+        text.innerText = 'Musik On';
+      }
+    }
+
+    // Memutar musik saat layar diklik pertama kali jika ditahan oleh browser
+    document.body.addEventListener('click', function() {
+      if (player && !isPlaying) {
+        player.playVideo();
+        isPlaying = true;
+        document.getElementById('music-icon').className = 'fa-solid fa-music';
+        document.getElementById('music-text').innerText = 'Musik On';
+      }
+    }, { once: true });
+  </script>
+
+</body>
+</html>
